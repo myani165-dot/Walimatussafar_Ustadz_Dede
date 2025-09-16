@@ -17,10 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       invitation.style.display = "block"; // tampil undangan
       document.body.style.overflow = "auto"; // scroll aktif
     }, 1600);
-  console.log("OpenBtn:", openBtn);
-openBtn.addEventListener("click", () => {
-  console.log("Tombol diklik!");
-});
+
+  });
 
 
   // Lock scroll saat cover masih tampil
