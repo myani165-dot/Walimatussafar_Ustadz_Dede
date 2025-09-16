@@ -1,17 +1,24 @@
-// Ambil nama dari URL (?to=Nama Tamu)
-const params = new URLSearchParams(window.location.search);
-const guest = params.get("to") || "Tamu Undangan";
-document.querySelector(".guest-name").textContent = "Kepada Yth: " + guest;
+document.addEventListener("DOMContentLoaded", () => {
+  const cover = document.getElementById("cover");
+  const invitation = document.getElementById("invitation");
+  const openBtn = document.getElementById("openBtn");
+  const guestName = document.getElementById("guestName");
 
-// Tombol Buka
-const openBtn = document.getElementById("openBtn");
-const cover = document.getElementById("cover");
-const invitation = document.getElementById("invitation");
+  // Ambil nama dari URL (misal ?to=Bapak+Ahmad)
+  const urlParams = new URLSearchParams(window.location.search);
+  const to = urlParams.get("to");
+  if (to) guestName.textContent = decodeURIComponent(to);
 
-openBtn.addEventListener("click", () => {
-  cover.classList.add("open");
-  setTimeout(() => {
-    cover.style.display = "none";
-    invitation.classList.remove("d-none");
-  }, 1200); // sesuai durasi animasi pintu
+  // Saat klik tombol buka
+  openBtn.addEventListener("click", () => {
+    cover.classList.add("opened");
+    setTimeout(() => {
+      cover.classList.add("hidden"); // cover hilang
+      invitation.style.display = "block"; // tampil undangan
+      document.body.style.overflow = "auto"; // scroll aktif
+    }, 1600);
+  });
+
+  // Lock scroll saat cover masih tampil
+  document.body.style.overflow = "hidden";
 });
