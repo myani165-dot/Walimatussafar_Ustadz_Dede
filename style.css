@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cover Pintu */
+.cover {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #111;
+  z-index: 1000;
+}
+
+.cover-content {
+  position: absolute;
+  z-index: 1100;
+  color: #fff;
+}
+
+.door {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 50%;
+  background: #000;
+  transition: transform 1.2s ease-in-out;
+  z-index: 1001;
+}
+
+.left-door {
+  left: 0;
+  border-right: 2px solid #444;
+}
+
+.right-door {
+  right: 0;
+  border-left: 2px solid #444;
+}
+
+.cover.open .left-door {
+  transform: translateX(-100%);
+}
+
+.cover.open .right-door {
+  transform: translateX(100%);
+}
+
+/* Isi Undangan */
+.invitation {
+  min-height: 100vh;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+              url('assets/bg-cover.jpg') center/cover no-repeat;
+  padding: 2rem;
+}
+
+.details h3, .family h3 {
+  color: #ffd700;
+}
+
+.quotes {
+  background: #222;
+  font-style: italic;
+}
+
+.closing {
+  background: #111;
+}
