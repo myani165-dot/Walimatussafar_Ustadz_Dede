@@ -17,7 +17,7 @@ openBtn.addEventListener("click", () => {
     cover.style.display = "none"; // tutup cover
     invitation.classList.add("show-invitation"); // tampilkan undangan
     document.body.style.overflow = "auto"; // aktifkan scroll
-  }, 5200); // timing sesuai CSS (1.5s pintu + 2s cahaya)
+  }, 6200); // timing sesuai CSS (1.5s pintu + 2s cahaya)
 });
 
 // Lock scroll saat cover masih tampil
