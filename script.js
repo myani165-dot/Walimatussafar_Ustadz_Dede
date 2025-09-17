@@ -25,4 +25,3 @@ const guestName = document.getElementById("guestName");
 
   // Lock scroll saat cover masih tampil
   document.body.style.overflow = "hidden";
-});
