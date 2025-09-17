@@ -88,10 +88,10 @@ a:hover {
   z-index: 2;
   pointer-events: none;
   filter: blur(20px) brightness(1.5);
-  transition: transform 5s ease-in-out, opacity 5s ease-in-out;
+  transition: transform 5s ease-in-out, opacity 2s ease-in-out;
 }
 
-/* cahaya tambahan biar ada kesan glow menyebar */
+/* glow tambahan */
 .light::after {
   content: "";
   position: absolute;
@@ -108,12 +108,22 @@ a:hover {
 /* ketika pintu buka */
 .open .light {
   opacity: 1;
-  transform: translateX(-50%) scaleX(3); /* garis melebar */
+  transform: translateX(-50%) scaleX(3);
   filter: blur(30px) brightness(2);
+  animation: pulseGlow 2s infinite alternate ease-in-out;
 }
 
-
-
+/* animasi denyut cahaya */
+@keyframes pulseGlow {
+  0% {
+    opacity: 0.8;
+    filter: blur(25px) brightness(1.8);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(40px) brightness(2.3);
+  }
+}
 
 /* isi undangan */
 .invitation {
