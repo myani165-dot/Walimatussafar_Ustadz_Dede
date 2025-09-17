@@ -157,7 +157,7 @@ a:hover {
 
     /* Sticky Bingkai Atas */
     .header-frame {
-      position: sticky;
+      position: fixed;
       top: 0;
       background: url("assets/img/bingkai.png") no-repeat center;
       background-size: cover;
