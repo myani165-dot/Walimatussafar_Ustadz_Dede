@@ -163,7 +163,6 @@ a:hover {
       background-size: contain;
       width: 100%;
       max-height: 100%;
-      height: auto;
       z-index: 15;
     }
 
@@ -179,7 +178,7 @@ a:hover {
       background-size: contain;
       animation: spin 20s linear infinite;
       z-index: 0; /* di belakang teks */
-      opacity: 0.1;
+      opacity: 0.8;
       pointer-events: none;
     }
 
