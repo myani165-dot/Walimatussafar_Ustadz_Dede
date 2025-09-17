@@ -170,7 +170,8 @@ a:hover {
       top: 0;
       background: url("assets/img/bingkai.png") no-repeat center;
       background-size: contain;
-      height: 120px;
+      width: 100vw;
+      height: auto;
       z-index: 10;
     }
 
