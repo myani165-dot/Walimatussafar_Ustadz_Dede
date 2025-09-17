@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f0f0f0;
+  background: #000;
+  color: #fff;
   overflow: hidden; /* awalnya ga bisa scroll */
 }
 
@@ -59,14 +60,14 @@ a:hover {
   left: 0;
   transform-origin: left center;
   border-right: 2px solid #333;
-  background-image: url("assets/img/doorleft.png"); /* ganti dengan gambar pintu kiri */
+  background-image: url("assets/img/doorleft.png"); /* gambar pintu kiri */
 }
 
 .right-door {
   right: 0;
   transform-origin: right center;
   border-left: 2px solid #333;
-  background-image: url("assets/img/doorright.png"); /* ganti dengan gambar pintu kanan */
+  background-image: url("assets/img/doorright.png"); /* gambar pintu kanan */
 }
 
 /* efek cahaya */
