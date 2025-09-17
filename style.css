@@ -48,7 +48,7 @@ a:hover {
   top: 0;
   width: 50%;
   height: 100%;
-  transition: transform 1.5s ease-in-out;
+  transition: transform 3.5s ease-in-out;
   transform-style: preserve-3d;
   z-index: 3;
   background-size: cover;
@@ -74,7 +74,7 @@ a:hover {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: radial-gradient(circle, rgba(255,255,200,0.9) 0%, rgba(255,255,200,0.6) 40%, transparent 80%);
+  background: radial-gradient(circle, rgba(255,255,200,0.9) 0%, rgba(255,255,200,0.6) 60%, transparent 90%);
   opacity: 0;
   z-index: 2;
   pointer-events: none;
@@ -101,7 +101,7 @@ a:hover {
 /* sinar muncul dulu */
 .open .light {
   opacity: 1;
-  animation: fadeOut 2s forwards;
+  animation: fadeOut 4s forwards;
 }
 
 @keyframes fadeOut {
