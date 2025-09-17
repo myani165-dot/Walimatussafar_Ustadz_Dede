@@ -152,17 +152,8 @@ a:hover {
 /* undangan muncul setelah cover hilang */
 .show-invitation {
   opacity: 1 !important;
+  transition: opacity 1.5s ease-in-out;
 }
-
-   /* ===== ISI UNDANGAN ===== */
-    .invitation {
-      display: none;
-      padding: 20px;
-      text-align: center;
-    }
-    .cover.hidden + .invitation {
-      display: block;
-    }
 
     /* Sticky Bingkai Atas */
     .header-frame {
