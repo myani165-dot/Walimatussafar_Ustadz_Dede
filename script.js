@@ -10,16 +10,14 @@ if (to) guestName.textContent = decodeURIComponent(to);
 
 // Saat klik tombol buka
 openBtn.addEventListener("click", () => {
-  cover.classList.add("opened");
+  cover.classList.add("open"); // <- SAMA dengan CSS
 
-  // Setelah animasi pintu + cahaya selesai, hilangkan cover & munculkan undangan
+  // Setelah animasi pintu + cahaya selesai
   setTimeout(() => {
-    cover.style.display = "none";
-    invitation.classList.add("show-invitation");
-    cover.classList.add("hidden"); // cover hilang
-    invitation.style.display = "block"; // tampil undangan
+    cover.style.display = "none"; // tutup cover
+    invitation.classList.add("show-invitation"); // tampilkan undangan
     document.body.style.overflow = "auto"; // aktifkan scroll
-  }, 2500); // timing harus lebih lama dari animasi
+  }, 2500); // timing sesuai CSS (1.5s pintu + 2s cahaya)
 });
 
 // Lock scroll saat cover masih tampil
