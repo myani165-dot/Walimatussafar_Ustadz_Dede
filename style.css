@@ -179,7 +179,7 @@ a:hover {
       background-size: contain;
       animation: spin 20s linear infinite;
       z-index: 0; /* di belakang teks */
-      opacity: 0.2;
+      opacity: 0.1;
       pointer-events: none;
     }
 
