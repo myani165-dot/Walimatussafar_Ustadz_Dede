@@ -56,7 +56,10 @@ span {
   z-index: 9999; } 
 
 .cover-content { 
-  position: absolute; 
+  position: absolute;
+  padding: 50px 20px; 
+  max-width: 800px; 
+  margin: auto; opacity: 0; /* awalnya hidden */ 
   bottom: 45px;
   z-index: 4; 
   text-shadow: var(--shadows); 
