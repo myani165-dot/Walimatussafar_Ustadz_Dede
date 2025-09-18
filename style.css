@@ -227,7 +227,17 @@ span {
       to { transform: translate(-50%, -50%) rotate(360deg); }
     }
 
-
+.acara { 
+  padding: 50px 20px; 
+  max-width: 800px; 
+  margin: auto; opacity: 0; /* awalnya hidden */ 
+  transition: opacity 1s ease-in-out; 
+  margin-top: 3rem;
+  min-height: 100vh;   /* minimal setinggi layar */
+  display: flex;       /* biar gampang ditengahin */
+  flex-direction: column;
+  justify-content: center; 
+}
 
 /* Media Queries */ 
 /* Extra Large */ 
