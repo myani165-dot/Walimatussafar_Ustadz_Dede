@@ -175,14 +175,19 @@ span {
 }
 
     /* Sticky Bingkai Atas */
-    .header-frame {
-      position: fixed;
-      top: 0;
-      background: url("assets/img/bingkai.png") no-repeat center;
-      background-size: cover;
-      width: 100%;
-      z-index: 10;
-    }
+.header-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px; /* jangan pakai full layar */
+  background: url("assets/img/bingkai.png") no-repeat center top;
+  background-size: contain; /* supaya proporsional */
+  width: 100%;
+  z-index: 10;
+  pointer-events: none; /* biar gak nutupin tombol scroll/klik */
+}
+
 
     /* Ornamen Tengah Berputar */
     .ornament {
