@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.2); /* putih dengan transparansi 20% */
-border: 1px solid rgba(255, 255, 255, 0.8); /* putih dengan transparansi 80% */
+  border: 1px solid rgba(255, 255, 255, 0.8); /* putih dengan transparansi 80% */
   border-radius: 50%;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.03), 0 0 0 1px rgba(0, 0, 0, 0.02);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,7 +41,7 @@ border: 1px solid rgba(255, 255, 255, 0.8); /* putih dengan transparansi 80% */
 .simply-countdown > .simply-section .simply-amount {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #fff;
   line-height: 1.2;
   letter-spacing: -0.025em;
 }
@@ -49,7 +49,7 @@ border: 1px solid rgba(255, 255, 255, 0.8); /* putih dengan transparansi 80% */
 .simply-countdown > .simply-section .simply-word {
   font-size: 1rem;
   font-weight: 500;
-  color: #64748b;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
