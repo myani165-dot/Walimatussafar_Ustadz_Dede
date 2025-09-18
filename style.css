@@ -241,7 +241,7 @@ span {
 @media (max-width: 576px) { 
     
     .simply-countdown > .simply-section { 
-        padding: 50px; 
+        padding: 15px; 
         margin: 1px; 
         margin-top: 1rem; 
         margin-bottom: 25rem; } 
