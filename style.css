@@ -241,6 +241,9 @@ span {
   justify-content: center; 
 }
 
+.acara a {
+  color: #000;}
+
 /* Media Queries */ 
 /* Extra Large */ 
 @media (min-width: 1200px)
