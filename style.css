@@ -57,6 +57,9 @@ span {
 
 .cover-content { 
   position: absolute;
+  padding: 50px 20px; 
+  max-width: 800px; 
+  margin: auto;
   bottom: 45px;
   z-index: 4; 
   text-shadow: var(--shadows); 
@@ -158,7 +161,8 @@ span {
 .invitation { 
   padding: 50px 20px; 
   max-width: 800px; 
-  margin: auto; opacity: 0; /* awalnya hidden */ 
+  margin: auto; 
+  opacity: 0; /* awalnya hidden */ 
   transition: opacity 1s ease-in-out; 
   margin-top: 3rem;
   min-height: 100vh;   /* minimal setinggi layar */
