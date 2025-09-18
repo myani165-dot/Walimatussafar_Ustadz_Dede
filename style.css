@@ -55,7 +55,7 @@ span {
 }
 
 .cover-content {
-  position: relative;  /* relatif ke flexbox, bukan absolute */
+  position: absolute;  
   text-align: center;
   text-shadow: var(--shadows);
   transition: opacity 1.5s ease-in-out;
