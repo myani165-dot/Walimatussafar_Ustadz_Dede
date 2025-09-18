@@ -218,9 +218,7 @@ span {
 
 /* laptop */ 
 @media (max-width: 992px) { 
-    html{ font-size: 75%; 
-        } 
-    
+   
     .simply-countdown > .simply-section { 
         padding: 70px; 
     } 
@@ -228,9 +226,7 @@ span {
 
 /* tablet */ 
 @media (max-width: 768px) { 
-    html{ font-size: 65%; 
-        } 
-  
+   
     .simply-countdown > .simply-section { 
         padding: 60px; margin: 5px; 
     } 
@@ -243,9 +239,7 @@ span {
 
 /* mobile phone */
 @media (max-width: 576px) { 
-    html{ font-size: 57%; 
-        } 
-   
+    
     .simply-countdown > .simply-section { 
         padding: 30px; 
         margin: 1px; 
