@@ -35,23 +35,32 @@ span {
   line-height: 1.5;
 }
 
-/* cover full screen */
-#cover {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  perspective: 2000px; /* biar keliatan 3D */
-  overflow: hidden;
-  z-index: 9999;
-}
-
 .cover-content {
   position: absolute;
   bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
   z-index: 4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%; /* biar header naik */
+}
+
+.cover-header {
+  margin-top: 50px; /* atur supaya judul agak ke atas */
+}
+
+.cover-footer {
+  margin-bottom: 20px;
+}
+
+.cover-footer p {
+  margin-bottom: 15px; /* jarak antara text dan tombol */
 }
 
 .door {
