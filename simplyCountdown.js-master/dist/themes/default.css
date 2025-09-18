@@ -1,0 +1,57 @@
+/**
+* Project : simply-countdown
+* File : simplyCountdown.theme.default
+* Author : Vincent Loy <vincent.loy1@gmail.com>
+* Theme : Light Modern
+*/
+
+.simply-countdown {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  margin: auto;
+}
+
+
+.simply-countdown > .simply-section {
+  width: 65px;
+  height: 65px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(127, 159, 249, 0.2);
+  border: 1px solid rgba(45, 91, 150, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.03), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(5px);
+}
+
+.simply-countdown > .simply-section > div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
