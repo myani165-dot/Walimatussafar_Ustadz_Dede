@@ -58,6 +58,9 @@ span {
   text-shadow: var(--shadows);
 }
 
+.cover-content h2, h1, p { 
+  text-shadow: var(--shadows);
+}
 
 .door {
   position: absolute;
