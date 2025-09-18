@@ -248,10 +248,11 @@ span {
 @media (max-width: 576px) { 
     
     .simply-countdown > .simply-section { 
-        padding: 15px; 
+        padding: 10px; 
         margin: 1px; 
         margin-top: 1rem; 
-        margin-bottom: 25rem; } 
+        margin-bottom: 25rem; 
+    } 
     .simply-countdown > .simply-section .simply-amount { 
         font-size: 1.5rem; } 
     .simply-countdown > .simply-section .simply-word { 
