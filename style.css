@@ -232,7 +232,7 @@ span {
 .acara { 
   padding: 50px 20px; 
   max-width: 800px; 
-  margin: auto; opacity: 0; /* awalnya hidden */ 
+  margin: auto;
   transition: opacity 1s ease-in-out; 
   margin-top: 3rem;
   min-height: 100vh;   /* minimal setinggi layar */
