@@ -28,7 +28,7 @@ h3 { font-size: 1.2rem; } /* kecil */
 p, a { font-size: 1rem; }
 
 a {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
