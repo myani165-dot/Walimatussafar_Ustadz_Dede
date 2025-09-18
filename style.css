@@ -55,6 +55,7 @@ span {
 
 .cover-content { 
   position: absolute; 
+  bottom: 50px;
   z-index: 4; 
   text-shadow: var(--shadows); 
   transition: opacity 1.5s ease-in-out; 
