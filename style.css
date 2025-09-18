@@ -42,23 +42,22 @@ span {
 }
 
 /* cover full screen */ 
-#cover {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;  /* rata tengah horizontal */
-  align-items: center;      /* rata tengah vertikal */
-  background: #000;
-  perspective: 2000px;
-  overflow: hidden;
-  z-index: 9999;
-}
+#cover { 
+  position: fixed; 
+  inset: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: #000; 
+  perspective: 2000px; /* biar keliatan 3D */ 
+  overflow: hidden; 
+  z-index: 9999; } 
 
-.cover-content {
-  position: absolute;  
-  text-align: center;
-  text-shadow: var(--shadows);
-  transition: opacity 1.5s ease-in-out;
+.cover-content { 
+  position: absolute; 
+  z-index: 4; 
+  text-shadow: var(--shadows); 
+  transition: opacity 1.5s ease-in-out; 
 }
 
 
