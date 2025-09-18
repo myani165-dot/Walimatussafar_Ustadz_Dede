@@ -11,8 +11,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-h1 { font-size: 2rem; }   /* besar */
-h2 { font-size: 1.5rem; } /* sedang */
+h1 { 
+  font-size: 2rem; 
+  font-family: 'Italianno', cursive;
+}   /* besar */
+h2 { 
+  font-size: 1.5rem;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-style: italic;
+} /* sedang */
 h3 { font-size: 1.2rem; } /* kecil */
 p, a { font-size: 1rem; }
 
