@@ -10,10 +10,6 @@ if (to) guestName.textContent = decodeURIComponent(to);
 
 // Saat klik tombol buka
 openBtn.addEventListener("click", () => {
-  // Sembunyikan teks cover lebih dulu
-  document.querySelector(".cover-content").classList.add("hide");
-  
-   // Lanjut animasi pintu
   cover.classList.add("open");
 
   // Setelah animasi pintu + cahaya selesai
