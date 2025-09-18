@@ -55,7 +55,7 @@ span {
 
 .cover-content { 
   position: absolute; 
-  bottom: 50px;
+  bottom: 45px;
   z-index: 4; 
   text-shadow: var(--shadows); 
   transition: opacity 1.5s ease-in-out; 
@@ -159,6 +159,10 @@ span {
   margin: auto; opacity: 0; /* awalnya hidden */ 
   transition: opacity 1s ease-in-out; 
   margin-top: 3rem;
+  min-height: 100vh;   /* minimal setinggi layar */
+  display: flex;       /* biar gampang ditengahin */
+  flex-direction: column;
+  justify-content: center; 
 }
 
 /* animasi buka pintu */
