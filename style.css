@@ -58,7 +58,6 @@ span {
   bottom: 40px; 
   z-index: 4; 
   text-shadow: var(--shadows);
-  .cover-content {
   transition: opacity 1.5s ease-in-out;
 }
 
