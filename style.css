@@ -24,7 +24,8 @@ h2 {
   font-family: 'Sorts Mill Goudy', serif;
   font-style: italic;
 } /* sedang */
-h3 { font-size: 1.2rem; } /* kecil */
+h3 { font-size: 1.2rem; 
+   font-family: 'Italianno',cursive;} /* kecil */
 p, a { font-size: 1rem; 
      font-family: 'Sorts Mill Goudy', serif;
      font-style: italic;}
