@@ -151,7 +151,6 @@ span {
   margin: auto;
   opacity: 0; /* awalnya hidden */
   transition: opacity 1s ease-in-out;
-  margin-top: 480px; /* kasih jarak dari header-frame */
 }
 
 
