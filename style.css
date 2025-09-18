@@ -1,5 +1,5 @@
 :root{
-  --shadows: 0 2px 2px rgb(0 0 0/0.8);
+  --shadows: 0 2px 2px rgb(0 0 0/1);
 }
 
 body {
@@ -55,7 +55,7 @@ span {
   position: absolute; 
   bottom: 40px; 
   z-index: 4; 
-  text-shadow: var(--shadow);
+  text-shadow: var(--shadows);
 }
 
 
