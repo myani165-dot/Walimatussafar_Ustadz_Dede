@@ -55,6 +55,7 @@ span {
   position: absolute; 
   bottom: 40px; 
   z-index: 4; 
+  text-shadow: var(--shadow);
 }
 
 
