@@ -28,13 +28,13 @@ h3 { font-size: 1.2rem; } /* kecil */
 p, a { font-size: 1rem; }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
-  background-color: #fff;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #0066cc;
 }
 
 span {
