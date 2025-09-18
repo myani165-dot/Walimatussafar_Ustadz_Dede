@@ -35,6 +35,18 @@ span {
   line-height: 1.5;
 }
 
+/* cover full screen */ 
+#cover { 
+  position: fixed; 
+  inset: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: #000; 
+  perspective: 2000px; /* biar keliatan 3D */ 
+  overflow: hidden; z-index: 9999; 
+}
+
 .cover-content {
   position: absolute;
   bottom: 30px;
