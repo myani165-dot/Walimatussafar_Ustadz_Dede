@@ -256,10 +256,10 @@ span {
     bottom: 2.5rem;
     right: 2rem;
     cursor: pointer;
-    border: 3px solid #FFBF00;  /* border*/
+    border: 3px solid #9a8257;  /* border*/
     border-radius: 50%;         /* biar bulat */
     background-color: #000;  
-    color: #FFBF00; 
+    color: #9a8257; 
     animation: rotating 4s linear infinite;
     transform-origin: center;
     display: flex;
