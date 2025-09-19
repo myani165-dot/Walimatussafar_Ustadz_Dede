@@ -67,7 +67,7 @@ span {
 .cover-content { 
   position: absolute;
   padding: 50px 20px; 
-  max-width: 800px; 
+  width: 100vw; 
   margin: auto;
   bottom: 90px;
   z-index: 4; 
@@ -129,7 +129,7 @@ span {
   z-index: 10;
   pointer-events: none;
   filter: blur(20px) brightness(1.5);
-  transition: transform 4s ease-in-out, opacity 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 1s ease-in-out;
 }
 
 /* glow tambahan */
@@ -151,7 +151,7 @@ span {
   opacity: 1;
   transform: translateX(-50%) scaleX(3);
   filter: blur(30px) brightness(2);
-  animation: pulseGlow 4s infinite alternate ease-in-out;
+  animation: pulseGlow 5s infinite alternate ease-in-out;
 }
 
 /* animasi denyut cahaya */
@@ -207,7 +207,7 @@ span {
   top: 0;
   left: 0;
   right: 0;
-  height: 500px; /* jangan pakai full layar */
+  height: auto; /* jangan pakai full layar */
   background: url("assets/img/bingkai.png") no-repeat center top;
   background-size: contain; /* supaya proporsional */
   width: 100vw;  
@@ -272,9 +272,9 @@ span {
 
 
 .audio-icon-wrapper {
-    width : 4rem;
-    height: 4rem;
-    font-size: 4rem;
+    width : 3rem;
+    height: 3rem;
+    font-size: 3rem;
     position: fixed;
     bottom: 2.5rem;
     right: 2rem;
