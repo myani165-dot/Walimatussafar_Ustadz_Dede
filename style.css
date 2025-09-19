@@ -221,27 +221,30 @@ span {
   pointer-events: none; /* biar gak nutupin tombol scroll/klik */
 }
 
+    /* Posisi fix di tengah */
+.ornament-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
 
-    /* Ornamen Tengah Berputar */
-    .ornament {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 200px;
-      height: 200px;
-      background: url("assets/img/ornamen.png") no-repeat center;
-      background-size: contain;
-      animation: spin 20s linear infinite;
-      z-index: -1; /* di belakang teks */
-      opacity: 0.8;
-      pointer-events: none;
-    }
+/* Yang muter */
+.ornament {
+  width: 200px;
+  height: 200px;
+  background: url("assets/img/ornamen.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.8;
+  animation: spin 20s linear infinite;
+}
 
-    @keyframes spin {
-      from { transform: translate(-50%, -50%) rotate(0deg); }
-      to { transform: translate(-50%, -50%) rotate(360deg); }
-    }
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
 
 .acara { 
   padding: 50px 20px; 
