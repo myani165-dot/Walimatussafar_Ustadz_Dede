@@ -288,10 +288,12 @@ span {
   display: flex;       /* biar gampang ditengahin */
   flex-direction: column;
   justify-content: center; 
+  text-align: center;
 }
 
 .img-logo {
-  border-radius: 15%;
+   display: block;       /* ubah jadi block biar bisa margin auto */
+  margin: 0 auto;       /* otomatis center horizontal */
   justify-content: center;
   box-shadow: 0 4px 10px rgba(255,255,255,0.8); /* bayangan lembut */
 }
