@@ -349,12 +349,12 @@ span {
 @media (max-width: 768px) { 
    
     .simply-countdown > .simply-section { 
-        padding: 30px; margin: 3px; 
+        padding: 35px; margin: 3px; 
     } 
     .simply-countdown > .simply-section .simply-amount { 
-        font-size: 2rem;
+        font-size: 1.7rem;
     } .simply-countdown > .simply-section .simply-word { 
-        font-size: 1rem; 
+        font-size: 0.8rem; 
     }  
 } 
 
