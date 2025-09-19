@@ -246,8 +246,10 @@ span {
   color: #000 !important;}
 
 .img-logo {
-  opacity: 0.8;
+  border-radius: 15%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* bayangan lembut */
 }
+
 
 .audio-icon-wrapper {
     width : 4rem;
