@@ -339,7 +339,10 @@ span {
 
 /* tablet */ 
 @media (max-width: 768px) { 
-   
+   #cover, .header-frame {
+      max-width: 768px;
+    }
+  
     .simply-countdown > .simply-section { 
         padding: 60px; margin: 5px; 
     } 
@@ -352,7 +355,10 @@ span {
 
 /* mobile phone */
 @media (max-width: 576px) { 
-    
+    #cover, .header-frame {
+      max-width: 576px;
+    }
+  
     .simply-countdown > .simply-section { 
         padding: 10px; 
         margin: 1px; 
