@@ -272,19 +272,7 @@ span {
   margin: auto;
   transition: opacity 1s ease-in-out; 
   margin-top: 3rem;
-  min-height: 100vh;   /* minimal setinggi layar */
-  display: flex;       /* biar gampang ditengahin */
-  flex-direction: column;
-  justify-content: center; 
-}
-
-.closing { 
-  padding: 50px 20px; 
-  max-width: 500px; 
-  margin: auto;
-  transition: opacity 1s ease-in-out; 
-  margin-top: 3rem;
-  min-height: 70vh;   /* minimal setinggi layar */
+  min-height: 70vh;  
   display: flex;       /* biar gampang ditengahin */
   flex-direction: column;
   justify-content: center; 
@@ -396,7 +384,7 @@ span {
         padding: 20px;
     } 
     .simply-countdown > .simply-section .simply-amount { 
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     } .simply-countdown > .simply-section .simply-word { 
         font-size: 0.8rem; 
     }  
@@ -414,7 +402,7 @@ span {
         margin-top: 1rem; 
     } 
     .simply-countdown > .simply-section .simply-amount { 
-        font-size: 1.5rem; } 
+        font-size: 1.2rem; } 
     .simply-countdown > .simply-section .simply-word { 
         font-size: 0.6rem; 
     }    
