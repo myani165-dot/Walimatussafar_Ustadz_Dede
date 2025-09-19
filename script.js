@@ -7,7 +7,10 @@ const guestName = document.getElementById("guestName");
 const urlParams = new URLSearchParams(window.location.search);
 const to = urlParams.get("to");
 if (to) guestName.textContent = decodeURIComponent(to);
-
+const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+const audioIcon = document.querySelector('.audio-icon-wrapper i');
+const song = document.querySelector('#song');
+    let isPlaying = false;
 // Saat klik tombol buka
 openBtn.addEventListener("click", () => {
   // Sembunyikan teks cover lebih dulu
@@ -16,13 +19,36 @@ openBtn.addEventListener("click", () => {
   // Lanjut animasi pintu
   cover.classList.add("open");
 
+   playAudio();
+  
   // Setelah animasi pintu + cahaya selesai
   setTimeout(() => {
     cover.style.display = "none"; // tutup cover
     invitation.classList.add("show-invitation"); // tampilkan undangan
     document.body.style.overflow = "auto"; // aktifkan scroll
-  }, 6000); // timing sesuai CSS (1.5s pintu + 2s cahaya)
+  }, 5500); // timing sesuai CSS (1.5s pintu + 2s cahaya)
 });
+
+   function playAudio(){
+      song.volume = 0.6;
+      audioIconWrapper.style.display = 'flex';
+      song.play();
+      isPlaying = true;
+    }
+
+    audioIconWrapper.onclick = function(){
+      if(isPlaying){
+        song.pause();
+        audioIcon.classList.remove('bi-disc');
+        audioIcon.classList.add('bi-pause-circle');
+      } else {
+        song.play();
+        audioIcon.classList.add('bi-disc');
+        audioIcon.classList.remove('bi-pause-circle');
+      }
+
+      isPlaying=!isPlaying;
+    }
 
 // Lock scroll saat cover masih tampil
 document.body.style.overflow = "hidden";
