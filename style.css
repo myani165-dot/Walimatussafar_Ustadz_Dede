@@ -398,12 +398,17 @@ span {
     width: 120px;
     height: 120px;
   }
-    .simply-countdown > .simply-section { 
-        padding: 10px; 
-    } 
-    .simply-countdown > .simply-section .simply-amount { 
-        font-size: 1.2rem; } 
-    .simply-countdown > .simply-section .simply-word { 
-        font-size: 0.6rem; 
-    }    
+    .simply-countdown {
+    gap: 0.5rem; /* lebih rapat lagi */
+  }
+  .simply-countdown > .simply-section { 
+    width: 55px;
+    height: 55px;
+  }
+  .simply-countdown > .simply-section .simply-amount { 
+    font-size: 1rem; 
+  }
+  .simply-countdown > .simply-section .simply-word { 
+    font-size: 0.6rem; 
+  }    
 }
