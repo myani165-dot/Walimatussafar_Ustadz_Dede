@@ -49,7 +49,9 @@ span {
   line-height: 1.5;
 }
 
-/* cover full screen */ 
+/* =========================
+   COVER FULL SCREEN
+========================= */
 #cover { 
   position: fixed; 
   inset: 0; 
@@ -57,39 +59,46 @@ span {
   justify-content: center; 
   align-items: center; 
   background: #000; 
-  perspective: 2000px; /* biar keliatan 3D */ 
+  perspective: 2000px;          /* biar efek swing 3D */
   overflow: hidden; 
   z-index: 9999; 
-  width: 100vw;   /* fix biar pas layar */
-  height: 100vh;  /* full tinggi layar */
-} 
+  width: 100vw; 
+  height: 100vh; 
+}
 
+/* =========================
+   TEKS DI COVER
+========================= */
 .cover-content { 
   position: absolute;
+  bottom: 90px;
   padding: 50px 20px; 
   width: 100vw; 
   margin: auto;
-  bottom: 90px;
   z-index: 4; 
   text-shadow: var(--shadows); 
   transition: opacity 1.5s ease-in-out; 
 }
 
-
-  .cover-content.hide {
+.cover-content.hide {
   opacity: 0;
 }
 
-.cover-content h2, h1, p { 
+.cover-content h2, 
+.cover-content h1, 
+.cover-content p { 
   text-shadow: var(--shadows);
 }
 
+/* =========================
+   PINTU KIRI & KANAN
+========================= */
 .door {
   position: absolute;
   top: 0;
   width: 50%;
   height: 100%;
-  transition: transform 5s ease-in-out;
+  transition: transform 5s ease-in-out; /* pelan & realistis */
   transform-style: preserve-3d;
   z-index: 3;
   background-size: cover;
@@ -100,25 +109,35 @@ span {
   left: 0;
   transform-origin: left center;
   border-right: 2px solid #333;
-  background-image: url("assets/img/doorleft.png"); /* gambar pintu kiri */
+  background-image: url("assets/img/doorleft.png");
 }
 
 .right-door {
   right: 0;
   transform-origin: right center;
   border-left: 2px solid #333;
-  background-image: url("assets/img/doorright.png"); /* gambar pintu kanan */
+  background-image: url("assets/img/doorright.png");
 }
 
-/* efek cahaya */
-/* cahaya utama keluar dari celah pintu */
+/* pintu terbuka */
+.open .left-door {
+  transform: rotateY(-120deg);
+}
+
+.open .right-door {
+  transform: rotateY(120deg);
+}
+
+/* =========================
+   EFEK CAHAYA
+========================= */
 .light {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) scaleX(0.05);
   width: 100%;
   height: 100%;
+  transform: translateX(-50%) scaleX(0.05); /* mulai tipis di celah pintu */
   background: linear-gradient(
     90deg,
     rgba(255, 255, 200, 0) 0%,
@@ -126,18 +145,17 @@ span {
     rgba(255, 255, 200, 0) 100%
   );
   opacity: 0;
-  z-index: 10;
+  z-index: 1;
   pointer-events: none;
   filter: blur(20px) brightness(1.5);
-  transition: transform 3s ease-in-out, opacity 2s ease-in-out;
+  transition: transform 5s ease-in-out, opacity 5s ease-in-out; /* sinkron sama durasi pintu */
 }
 
 /* glow tambahan */
 .light::after {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  inset: 0;
   background: radial-gradient(circle at center,
     rgba(255,255,220,0.8) 0%,
     rgba(255,255,180,0.4) 30%,
@@ -146,12 +164,12 @@ span {
   filter: blur(40px);
 }
 
-/* ketika pintu buka */
+/* saat pintu buka cahaya ikut melebar */
 .open .light {
   opacity: 1;
   transform: translateX(-50%) scaleX(3);
   filter: blur(30px) brightness(2);
-  animation: pulseGlow 2s infinite alternate ease-in-out;
+  animation: pulseGlow 2s infinite alternate ease-in-out; /* efek bernafas */
 }
 
 /* animasi denyut cahaya */
@@ -166,40 +184,27 @@ span {
   }
 }
 
-/* isi undangan */
+/* =========================
+   ISI UNDANGAN
+========================= */
 .invitation { 
-  padding: 50px 20px; 
   max-width: 500px; 
   margin: auto; 
-  opacity: 0; /* awalnya hidden */ 
-  transition: opacity 1s ease-in-out; 
   margin-top: 3rem;
-  min-height: 100vh;   /* minimal setinggi layar */
-  display: flex;       /* biar gampang ditengahin */
+  padding: 50px 20px; 
+  min-height: 100vh; 
+  display: flex; 
   flex-direction: column;
   justify-content: center; 
+  opacity: 0;            /* sembunyi dulu */
+  transition: opacity 1s ease-in-out; 
 }
 
-/* animasi buka pintu */
-.open .left-door {
-  transform: rotateY(-120deg);
-}
-
-.open .right-door {
-  transform: rotateY(120deg);
-}
-
-
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-/* undangan muncul setelah cover hilang */
 .show-invitation {
   opacity: 1 !important;
   transition: opacity 1.5s ease-in-out;
 }
+
 
     /* Sticky Bingkai Atas */
 .header-frame {
