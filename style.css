@@ -252,10 +252,10 @@ span {
     bottom: 2.5rem;
     right: 2rem;
     cursor: pointer;
-    border: 3px solid #A67C00;  /* border putih */
+    border: 3px solid #FFBF00;  /* border*/
     border-radius: 50%;         /* biar bulat */
     background-color: #000;  
-    color: #A67C00; 
+    color: #FFBF00; 
     animation: rotating 4s linear infinite;
     transform-origin: center;
     display: flex;
