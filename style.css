@@ -290,7 +290,7 @@ span {
    display: block;       /* ubah jadi block biar bisa margin auto */
   margin: 0 auto;       /* otomatis center horizontal */
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(255,255,255,0.8); /* bayangan lembut */
+  box-shadow: 0 6px 15px rgba(255,255,255,0.8); /* bayangan lembut */
 }
 
 
