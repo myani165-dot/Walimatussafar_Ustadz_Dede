@@ -66,4 +66,19 @@ document.body.style.overflow = "hidden";
             seconds: { root: 'Detik', lambda: (root, n) => n > 1 ? root  : root }
         },
     });
-    
+
+document.addEventListener('DOMContentLoaded', function () {
+  const animElements = document.querySelectorAll('.anim');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  animElements.forEach(el => observer.observe(el));
+});
