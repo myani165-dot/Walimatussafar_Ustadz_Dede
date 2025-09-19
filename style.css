@@ -33,6 +33,7 @@ p, a { font-size: 1rem;
 a {
   color: #fff !important;
   text-decoration: none;
+  border: none;
 }
 
 a:hover {
@@ -242,7 +243,7 @@ span {
 }
 
 .acara a {
-  color: #000;}
+  color: #000 !important;}
 
 .img-logo {
   opacity: 0.8;
