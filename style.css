@@ -55,7 +55,10 @@ span {
   background: #000; 
   perspective: 2000px; /* biar keliatan 3D */ 
   overflow: hidden; 
-  z-index: 9999; } 
+  z-index: 9999; 
+  width: 100vw;   /* fix biar pas layar */
+  height: 100vh;  /* full tinggi layar */
+} 
 
 .cover-content { 
   position: absolute;
@@ -203,7 +206,8 @@ span {
   height: 500px; /* jangan pakai full layar */
   background: url("assets/img/bingkai.png") no-repeat center top;
   background-size: contain; /* supaya proporsional */
-  width: 100%;
+  width: 100vw;  
+  max-width: 100%; /* biar ga ngelebar */
   z-index: 10;
   pointer-events: none; /* biar gak nutupin tombol scroll/klik */
 }
@@ -339,10 +343,7 @@ span {
 
 /* tablet */ 
 @media (max-width: 768px) { 
-   #cover, .header-frame {
-      max-width: 768px;
-    }
-  
+   
     .simply-countdown > .simply-section { 
         padding: 60px; margin: 5px; 
     } 
@@ -355,10 +356,7 @@ span {
 
 /* mobile phone */
 @media (max-width: 576px) { 
-    #cover, .header-frame {
-      max-width: 576px;
-    }
-  
+   
     .simply-countdown > .simply-section { 
         padding: 10px; 
         margin: 1px; 
