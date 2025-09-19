@@ -129,7 +129,7 @@ span {
   z-index: 10;
   pointer-events: none;
   filter: blur(20px) brightness(1.5);
-  transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 5s ease-in-out, opacity 2s ease-in-out;
 }
 
 /* glow tambahan */
@@ -151,7 +151,7 @@ span {
   opacity: 1;
   transform: translateX(-50%) scaleX(3);
   filter: blur(30px) brightness(2);
-  animation: pulseGlow 5s infinite alternate ease-in-out;
+  animation: pulseGlow 2s infinite alternate ease-in-out;
 }
 
 /* animasi denyut cahaya */
@@ -207,7 +207,7 @@ span {
   top: 0;
   left: 0;
   right: 0;
-  height: auto; /* jangan pakai full layar */
+  height: 35vh; /* jangan pakai full layar */
   background: url("assets/img/bingkai.png") no-repeat center top;
   background-size: contain; /* supaya proporsional */
   width: 100vw;  
