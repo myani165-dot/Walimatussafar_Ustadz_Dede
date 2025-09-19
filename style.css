@@ -244,6 +244,68 @@ span {
 .acara a {
   color: #000;}
 
+.audio-icon-wrapper {
+    width : 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    border: 3px solid #A67C00;  /* border putih */
+    border-radius: 50%;         /* biar bulat */
+    background-color: #000;  
+    color: #A67C00; 
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    z-index: 10;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== Class dasar animasi ===== */
+.anim {
+  opacity: 0;
+  transition: all 3s ease;
+}
+
+/* muncul saat scroll */
+.anim.active {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1) rotate(0deg);
+}
+
+/* ===== Variasi efek ===== */
+
+/* Slide */
+.from-left { transform: translateX(-50px); }
+.from-right { transform: translateX(50px); }
+.from-top { transform: translateY(-50px); }
+.from-bottom { transform: translateY(50px); }
+
+/* Zoom */
+.zoom-in { transform: scale(0); }
+.zoom-out { transform: scale(2); }
+
+/* Fade */
+.fade { opacity: 0; }
+.fade.active { opacity: 1; }
+
+/* Rotate */
+.rotate-left { transform: rotate(-45deg); }
+.rotate-right { transform: rotate(45deg); }
+
 /* Media Queries */ 
 /* Extra Large */ 
 @media (min-width: 1200px)
