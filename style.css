@@ -129,7 +129,7 @@ span {
   z-index: 10;
   pointer-events: none;
   filter: blur(20px) brightness(1.5);
-  transition: transform 5s ease-in-out, opacity 2s ease-in-out;
+  transition: transform 3s ease-in-out, opacity 2s ease-in-out;
 }
 
 /* glow tambahan */
@@ -169,7 +169,7 @@ span {
 /* isi undangan */
 .invitation { 
   padding: 50px 20px; 
-  max-width: 600px; 
+  max-width: 500px; 
   margin: auto; 
   opacity: 0; /* awalnya hidden */ 
   transition: opacity 1s ease-in-out; 
@@ -207,7 +207,7 @@ span {
   top: 0;
   left: 0;
   right: 0;
-  height: 35vh; /* jangan pakai full layar */
+  height: 50vh; /* jangan pakai full layar */
   background: url("assets/img/bingkai.png") no-repeat center top;
   background-size: contain; /* supaya proporsional */
   width: 100vw;  
@@ -240,7 +240,7 @@ span {
 
 .acara { 
   padding: 50px 20px; 
-  max-width: 600px; 
+  max-width: 500px; 
   margin: auto;
   transition: opacity 1s ease-in-out; 
   margin-top: 3rem;
@@ -255,7 +255,7 @@ span {
 
 .tutup { 
   padding: 50px 20px; 
-  max-width: 600px; 
+  max-width: 500px; 
   margin: auto;
   transition: opacity 1s ease-in-out; 
   margin-top: 3rem;
@@ -349,7 +349,7 @@ span {
 @media (max-width: 768px) { 
    
     .simply-countdown > .simply-section { 
-        padding: 60px; margin: 5px; 
+        padding: 30px; margin: 3px; 
     } 
     .simply-countdown > .simply-section .simply-amount { 
         font-size: 2rem;
