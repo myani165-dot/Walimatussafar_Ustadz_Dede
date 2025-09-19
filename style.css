@@ -12,6 +12,11 @@ html, body {
   height: 100%;
   overflow: hidden; /* kunci scroll */
   box-sizing: border-box;
+  overflow-x: hidden; /* cegah scroll horizontal */
+}
+
+* {
+  box-sizing: border-box; /* pastikan padding nggak nambahin lebar */
 }
 
 h1, h2, h3, h4, h5, h6 {
