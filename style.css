@@ -226,30 +226,29 @@ span {
   pointer-events: none; /* biar gak nutupin tombol scroll/klik */
 }
 
-    /* Posisi fix di tengah */
-.ornament-wrapper {
+   .ornament {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  pointer-events: none;
-}
-
-/* Yang muter */
-.ornament {
-  width: 200px;
+  width: 200px;   /* default untuk layar sedang */
   height: 200px;
   background: url("assets/img/ornamen.png") no-repeat center;
   background-size: contain;
   opacity: 0.8;
+  z-index: -1;
+  pointer-events: none;
+
+  /* Centering */
+  transform: translate(-50%, -50%);
+
+  /* Rotasi */
   animation: spin 20s linear infinite;
-  transform-origin: center; /* <-- titik putar di tengah */
+  transform-origin: center center;
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .acara { 
@@ -377,15 +376,21 @@ span {
 
 /* laptop */ 
 @media (max-width: 992px) { 
-   
+   .ornament {
+    width: 250px;
+    height: 250px;
+  }
     .simply-countdown > .simply-section { 
         padding: 70px; 
     } 
 } 
 
 /* tablet */ 
-@media (max-width: 768px) { 
-   
+@media (max-width: 768px) and (max-width: 991px) {
+  .ornament {
+    width: 160px;
+    height: 160px;
+  }
     .simply-countdown > .simply-section { 
         padding: 35px; margin: 3px; 
     } 
@@ -398,7 +403,10 @@ span {
 
 /* mobile phone */
 @media (max-width: 576px) { 
-   
+   .ornament {
+    width: 120px;
+    height: 120px;
+  }
     .simply-countdown > .simply-section { 
         padding: 10px; 
         margin: 1px; 
