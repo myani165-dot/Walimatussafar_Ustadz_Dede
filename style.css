@@ -279,6 +279,30 @@ span {
   justify-content: center; 
 }
 
+.closing { 
+  padding: 50px 20px; 
+  max-width: 500px; 
+  margin: auto;
+  transition: opacity 1s ease-in-out; 
+  margin-top: 3rem;
+  min-height: 70vh;   /* minimal setinggi layar */
+  display: flex;       /* biar gampang ditengahin */
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.footer { 
+  padding: 50px 20px; 
+  max-width: 500px; 
+  margin: auto;
+  transition: opacity 1s ease-in-out; 
+  margin-top: 3rem;
+  min-height: 30vh;   /* minimal setinggi layar */
+  display: flex;       /* biar gampang ditengahin */
+  flex-direction: column;
+  justify-content: center; 
+}
+
 .img-logo {
   border-radius: 15%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.8); /* bayangan lembut */
