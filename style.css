@@ -17,7 +17,6 @@ html, body {
 
 * {
   box-sizing: border-box; /* pastikan padding nggak nambahin lebar */
-  outline: 1px solid red !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -249,15 +248,14 @@ span {
 }
 
 .acara { 
-  padding: 50px 20px; 
   max-width: 500px; 
-  margin: auto;
-  transition: opacity 1s ease-in-out; 
+  margin: auto; 
   margin-top: 3rem;
-  min-height: 100vh;   /* minimal setinggi layar */
-  display: flex;       /* biar gampang ditengahin */
+  padding: 50px 20px; 
+  min-height: 100vh; 
+  display: flex; 
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;  
   overflow-X: hidden;
 }
 
@@ -265,28 +263,27 @@ span {
   color: #000 !important;}
 
 .tutup { 
-  padding: 50px 20px; 
   max-width: 500px; 
-  margin: auto;
-  transition: opacity 1s ease-in-out; 
+  margin: auto; 
   margin-top: 3rem;
-  min-height: 70vh;  
-  display: flex;       /* biar gampang ditengahin */
+  padding: 50px 20px; 
+  min-height: 100vh; 
+  display: flex; 
   flex-direction: column;
   justify-content: center; 
+  overflow-x: hidden;
 }
 
 .footer { 
-  padding: 50px 20px; 
   max-width: 500px; 
-  margin: auto;
-  transition: opacity 1s ease-in-out; 
+  margin: auto; 
   margin-top: 3rem;
-  min-height: 30vh;   /* minimal setinggi layar */
-  display: flex;       /* biar gampang ditengahin */
+  padding: 50px 20px; 
+  min-height: 100vh; 
+  display: flex; 
   flex-direction: column;
   justify-content: center; 
-  text-align: center;
+  overflow-x: hidden;
 }
 
 .img-logo {
@@ -316,6 +313,7 @@ span {
     align-items: center;
     line-height: 0;
     z-index: 10;
+    overflow-x: hidden;
 }
 
 @keyframes rotating {
