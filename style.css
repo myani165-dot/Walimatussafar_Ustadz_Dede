@@ -307,13 +307,13 @@ span {
     background-color: #000;  
     color: #9a8257; 
     animation: rotating 4s linear infinite;
+    transform-box: fill-box;
     transform-origin: center;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 0;
     z-index: 10;
-    overflow-x: hidden;
 }
 
 @keyframes rotating {
