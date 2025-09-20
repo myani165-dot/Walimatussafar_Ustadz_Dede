@@ -17,6 +17,7 @@ html, body {
 
 * {
   box-sizing: border-box; /* pastikan padding nggak nambahin lebar */
+  outline: 1px solid red !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
