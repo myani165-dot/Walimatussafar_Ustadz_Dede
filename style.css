@@ -224,6 +224,7 @@ span {
   max-width: 100%; /* biar ga ngelebar */
   z-index: 10;
   pointer-events: none; /* biar gak nutupin tombol scroll/klik */
+  overflow-X: hidden;
 }
 
  .ornament {
@@ -256,6 +257,7 @@ span {
   display: flex;       /* biar gampang ditengahin */
   flex-direction: column;
   justify-content: center; 
+  overflow-X: hidden;
 }
 
 .acara a {
